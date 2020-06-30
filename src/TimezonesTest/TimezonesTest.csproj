@@ -4,6 +4,15 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="htmlkCFDI.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="**/*">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="TimeZoneConverter" Version="3.2.0" />
     <PackageReference Include="itext7.pdfhtml" Version="3.0.0" />
